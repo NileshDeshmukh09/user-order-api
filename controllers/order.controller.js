@@ -55,7 +55,7 @@ exports.getOrderByUserID = async (req, res) => {
     
 
 
-    const order = await Order.findOne({
+    const order = await Order.find({
         userID: req.params.userID
     });
 
